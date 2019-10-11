@@ -6,8 +6,8 @@ ENV FLASK_RUN_PORT 8888
 
 RUN apk add bash gcc musl-dev mysql mariadb-dev
 RUN mkdir /www/
-ADD requeriments.txt /www/requeriments.txt
-RUN pip install -r /www/requeriments.txt 
+ADD requirements.txt /www/requirements.txt
+RUN pip install -r /www/requirements.txt 
 
 EXPOSE 8888
 
